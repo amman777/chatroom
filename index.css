@@ -8,6 +8,9 @@ body{
     animation: blur 0.5s ease-out;
   
   }
+
+ 
+
   *{
     outline: none;
     border: none;
@@ -23,9 +26,9 @@ body{
     justify-content: center;
     align-items: center;
   
-    background-color: #D64045;/*#467599;*/
+    background-color: #211a62;/*#467599;*/
     border-bottom: 5px solid #fff;
-    box-shadow: 0 0 30px -18px #D64045;
+    box-shadow: 0 0 30px -18px #211a62;
   
   }
   #title_inner_container{
@@ -169,7 +172,7 @@ body{
     color: #ccc;
   }
   #chat_input_send.enabled{
-    color: #D64045;
+    color: #211a62;
     background-color: Transparent;
     cursor: pointer;
   
@@ -186,7 +189,7 @@ body{
     margin-top: 20px;
   }
   #chat_logout{
-    color: #D64045;
+    color: #211a62;
     cursor: pointer;
   }
   #chat_logout:hover{
@@ -290,3 +293,5 @@ body{
     border-radius: 5px;
   }
   
+
+  @keyframes()
