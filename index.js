@@ -72,7 +72,7 @@ window.onload = function () {
             var join_input = document.createElement('input')
             join_input.setAttribute('id', 'join_input')
             join_input.setAttribute('maxlength', 15)
-            join_input.placeholder = 'Welcome to Chat Room'
+            join_input.placeholder = 'Enter your name to join'
             // Every time we type into the join_input
             join_input.onkeyup = function () {
                 // If the input we have is longer that 0 letters
