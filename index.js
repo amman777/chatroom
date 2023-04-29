@@ -72,7 +72,7 @@ window.onload = function () {
             var join_input = document.createElement('input')
             join_input.setAttribute('id', 'join_input')
             join_input.setAttribute('maxlength', 15)
-            join_input.placeholder = 'Hello! Enter Your Name to Join'
+            join_input.placeholder = ''
             // Every time we type into the join_input
             join_input.onkeyup = function () {
                 // If the input we have is longer that 0 letters
@@ -149,14 +149,14 @@ window.onload = function () {
             var chat_input_send = document.createElement('button')
             chat_input_send.setAttribute('id', 'chat_input_send')
             chat_input_send.setAttribute('disabled', true)
-            chat_input_send.innerHTML = `<i class="far fa-paper-plane"></i>`
+            chat_input_send.innerHTML = `SEND`
 
             var chat_input = document.createElement('input')
             chat_input.setAttribute('id', 'chat_input')
             // Only a max message length of 1000
             chat_input.setAttribute('maxlength', 1000)
             // Get the name of the user
-            chat_input.placeholder = `${parent.get_name()}. Say something...`
+            chat_input.placeholder = `${parent.get_name()}. Write Your Message.....`
             chat_input.onkeyup = function () {
                 if (chat_input.value.length > 0) {
                     chat_input_send.removeAttribute('disabled')
