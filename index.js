@@ -156,7 +156,7 @@ window.onload = function () {
             // Only a max message length of 1000
             chat_input.setAttribute('maxlength', 1000)
             // Get the name of the user
-            chat_input.placeholder = `${parent.get_name()}. Write Your Message.....`
+            chat_input.placeholder = `${parent.get_name()} write your message....`
             chat_input.onkeyup = function () {
                 if (chat_input.value.length > 0) {
                     chat_input_send.removeAttribute('disabled')
@@ -186,7 +186,7 @@ window.onload = function () {
 
             var chat_logout = document.createElement('button')
             chat_logout.setAttribute('id', 'chat_logout')
-            chat_logout.textContent = `${parent.get_name()} • logout`
+            chat_logout.textContent = `${parent.get_name()} press to logout`
             // "Logout" is really just deleting the name from the localStorage
             chat_logout.onclick = function () {
                 localStorage.clear()
